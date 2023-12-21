@@ -1,0 +1,27 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.aba {
+  position: fixed;
+  background-color: white;
+}
+
+.aba a {
+  scroll-behavior: smooth 3s;
+}
+
+#section1 {
+  height: 100vh;
+  background-color: red;
+}
+
+#section2 {
+  height: 100vh;
+  background-color: green;
+}
+
+#section3 {
+  height: 100vh;
+  background-color: blue;
+}

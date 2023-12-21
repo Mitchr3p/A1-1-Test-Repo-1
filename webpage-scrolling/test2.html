@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test2.css" />
+    <script src="test2.js"></script>
+    <title>Webpage Scrolling</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="aba">
+        <a href="#s1" onclick="scrollToSection('#section1')">one</a>
+        <a href="#s2" onclick="scrollToSection('#section2')">two</a>
+        <a href="#s3" onclick="scrollToSection('#section3')">thre</a>
+      </div>
+      <section id="section1"></section>
+      <section id="section2"></section>
+      <section id="section3"></section>
+    </div>
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.querySelector(sectionId);
+
+        if (section) {
+          // Calculate the scroll distance
+          const offsetTop = section.offsetTop;
+          const duration = 3000; // 3 seconds
+
+          // Scroll to the section with a smooth effect
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth",
+            duration: duration,
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
