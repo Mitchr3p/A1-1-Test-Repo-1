@@ -1,4 +1,4 @@
-const nameI = document.querySelector(".input-name")
+const nameI = document.querySelector(".input-nime")
 const genderI = document.getElementById("input-gender")
 const ageI = document.getElementById("input-age")
 const nationalityI = document.getElementById("input-nationality")
@@ -10,8 +10,7 @@ const nationalityP = document.getElementById("nationality")
 
 let submitBtn = document.querySelector(".submit-btn")
 
-submitBtn.addEventListener("click", function () {
-  nameP.textContent = ""
+submitBtn.addEventListener("click", function() {
   nameP.textContent = nameI.value
 })
 

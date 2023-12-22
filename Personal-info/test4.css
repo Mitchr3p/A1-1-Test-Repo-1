@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Courier New', Courier, monospace;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -32,6 +28,6 @@ button {
   padding: 1rem 3rem;
 }
 
-.right p {
-  border: 2px solid red;
+p {
+  color: green;
 }
